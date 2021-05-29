@@ -1,0 +1,25 @@
+{
+  "name": "dealloc.co",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/372354984/dealloc.co.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/372354984/dealloc.co/issues"
+  },
+  "homepage": "https://github.com/372354984/dealloc.co#readme",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
