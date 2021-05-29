@@ -31,4 +31,4 @@ jobs:
       - run: git config --global user.email "372354984@qq.com"
       - run: git config --global user.name "dealloc"
       - run: git commit -m 'deploy'
-      - run: git push -f https://github.com/372354984/dealloc.co.git docs
+      - run: git push -f https://github.com/372354984/dealloc.co.git origin/main: docs
