@@ -23,7 +23,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build and push
-      - run: npm install
+        run: npm install
       - run: npm run docs:build
       - run: cd docs/.vuepress/dist
       - run: git init
