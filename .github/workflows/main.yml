@@ -2,11 +2,11 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ] 
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,13 +26,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build and push
-      - run: |
-          npm install
-          npm run docs:build
-          cd docs/.vuepress/dist
-          git init
-          git add -A
-          git commit -m 'deploy'
-          git push -f https://github.com/372354984/dealloc.co.git docs
-    
- 
+      - run: npm install
+      - run: npm run docs:build
+      - run: cd docs/.vuepress/dist
+      - run: git init
+      - run: git add -A
+      - run: git commit -m 'deploy'
+      - run: git push -f https://github.com/372354984/dealloc.co.git docs
